@@ -1,7 +1,17 @@
 
 
+#Written By Andrew Allard
+#
+#Attempting to create an AI for conversation.
+#This is going to have to take in sentences (text based at first) Process what is being said and or implied.
+#Based on the context of the conversation being had, form and deliver a logical responce that is approprite to the conversation.
+#
+#
+#This is hopefully going to become an intellagent agent capable of holding a logical conversation.
+#
 
 
+self._version='0'
 
 
 
@@ -10,6 +20,7 @@ class conversation:
         self._typesOfConversation=('General','Argument','Debate','Comfort','Playful','Punishment')
         self._CurrentConversationType=self._typeOfConversation(0)
         self._PreviousTypesOfConversations=None
+        self._subject=None
 
 
 
@@ -19,13 +30,15 @@ class conversation:
 class processType:
 
     _types=('Question','Statement')
-    _StatementTypes('Objective','Subjective','Argumentative','Theorizing','Definative')
+    _StatementTypes('Argumentive')
 
     def __init__(self,stringIn):
         assert isinstance(stringIn,str)
         self.stringToPrcoess=stringIn
         self.isQuestion=None
         self.isArgument=None
+        self.subject=None
+        self.isActive=None
 
     def isQuestion(self):
         if(self.stringToPrcoess.endswith('?')):
