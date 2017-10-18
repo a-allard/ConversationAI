@@ -11,11 +11,11 @@
 #
 
 
-self._version='0'
+self.__version='0'
 
 
 
-class conversation:
+class Conversation:
     def __init__(self):
         self._typesOfConversation=conversationTypes
         self._CurrentConversationType=self._typesOfConversation.GENERAL
@@ -25,7 +25,7 @@ class conversation:
 
 
 
-class converstationTypes:
+class ConverstationTypes:
     def __init__(self):
         
         self.GENERAL=0
@@ -34,9 +34,10 @@ class converstationTypes:
         self.COMFORT=3
         self.PLAYFUL=4
         self.PUNISHMENT=5
-        self.
 
-class sentence:
+        
+
+class Sentence:
 
     _types=('Question','Statement')
     _StatementTypes('Argumentive')
