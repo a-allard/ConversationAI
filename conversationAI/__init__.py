@@ -17,17 +17,26 @@ self._version='0'
 
 class conversation:
     def __init__(self):
-        self._typesOfConversation=('General','Argument','Debate','Comfort','Playful','Punishment')
-        self._CurrentConversationType=self._typeOfConversation(0)
+        self._typesOfConversation=conversationTypes
+        self._CurrentConversationType=self._typesOfConversation.GENERAL
         self._PreviousTypesOfConversations=None
         self._subject=None
 
 
 
 
+class converstationTypes:
+    def __init__(self):
+        
+        self.GENERAL=0
+        self.ARGUMENT=1
+        self.DEBATE=2
+        self.COMFORT=3
+        self.PLAYFUL=4
+        self.PUNISHMENT=5
+        self.
 
-
-class processType:
+class sentence:
 
     _types=('Question','Statement')
     _StatementTypes('Argumentive')
@@ -55,3 +64,12 @@ class processType:
         pass
 
     def 
+
+
+
+
+
+
+
+
+
