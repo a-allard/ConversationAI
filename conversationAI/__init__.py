@@ -51,6 +51,8 @@ class Sentence:
         self.isActive=None
         self.Action=None
         self.evidence=None
+    def processSentenceType(self):
+        
         
 
     def __isQuestion__(self):
@@ -64,11 +66,16 @@ class Sentence:
     def __findSubject__(self):
         pass
 
-    def 
+##    def 
 
 
 
-
+class Word:
+    @staticmethod
+    def isNoun(stringWord):
+        pass
+    def isArticle(stringWord):
+        if(stringWord.find('the'
 
 
 
