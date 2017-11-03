@@ -1,5 +1,13 @@
-class Sentence:
+#################################################################################
+#Written By Andrew Allard as part of the attempt to make an intelligent agent
+#one can have a conversation with.
+#
 
+
+from Word import Word
+
+class Sentence:
+    __version='0'
     _types=('Question','Statement')
     _StatementTypes('Argumentive')
 
@@ -12,6 +20,11 @@ class Sentence:
         self.isActive=None
         self.Action=None
         self.evidence=None
+        self.listOfWords=stringIn.split(' ')
+        self.words=[]
+        for stringWord in self.listOfWords:
+            self.words.append(Word(stringWord))
+        
     def processSentenceType(self):
         
         

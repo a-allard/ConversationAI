@@ -26,6 +26,13 @@ class Conversation:
 
 
 class ConverstationTypes:
+    GENERAL=0
+    ARGUMENT=1
+    DEBATE=2
+    COMFORT=3
+    PLAYFUL=4
+    PUNISHMENT=5
+    
     def __init__(self):
         
         self.GENERAL=0
@@ -34,50 +41,7 @@ class ConverstationTypes:
         self.COMFORT=3
         self.PLAYFUL=4
         self.PUNISHMENT=5
+        self.type=ConversationTypes.GENERAL
 
         
-
-class Sentence:
-
-    _types=('Question','Statement')
-    _StatementTypes('Argumentive')
-
-    def __init__(self,stringIn):
-        assert isinstance(stringIn,str)
-        self.stringToPrcoess=stringIn
-        self.isQuestion=None
-        self.isArgumentive=None
-        self.subject=None
-        self.isActive=None
-        self.Action=None
-        self.evidence=None
-    def processSentenceType(self):
-        
-        
-
-    def __isQuestion__(self):
-        if(self.stringToPrcoess.endswith('?')):
-            self.isQuestion=True    #If the user was kind enough to put a ? on the end of the input we can easily decide this is a question.  Not always true but lets assume it is true for now.
-        else:
-            
-            
-    def __isArgument__(self):
-        pass
-    def __findSubject__(self):
-        pass
-
-##    def 
-
-
-
-class Word:
-    @staticmethod
-    def isNoun(stringWord):
-        pass
-    def isArticle(stringWord):
-        if(stringWord.find('the'
-
-
-
-
 
